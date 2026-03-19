@@ -6,7 +6,7 @@ import { AxiosError } from "axios";
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 
-const LaOtraConId = () => {
+const TheOtherWithId = () => {
 
     const { id } = useParams()
 
@@ -25,7 +25,7 @@ const LaOtraConId = () => {
 
     return (
         <div>
-            <h1>La otra con ID y ese id es {id}</h1>
+            <h1>The other with ID and that id is {id}</h1>
             {!char && loading && <h1>Loading...</h1>}
             {char &&
             (<>
@@ -37,4 +37,4 @@ const LaOtraConId = () => {
     )
 };
 
-export default LaOtraConId;
+export default TheOtherWithId;

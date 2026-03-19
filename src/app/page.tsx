@@ -11,13 +11,13 @@ const Home = () => {
 
     return (
         <div>
-            <h1> Hello Worldcito</h1>
+            <h1> Hello Worldo</h1>
 
-            <Link href="/laotra">Si pinchas aquí te lleva a la otra</Link> 
+            <Link href="/theother">If you click here it will get you to the other</Link> 
 
-            <p onClick={() => { router.push("/laotra") }}>Si pinchas aqui te lleva a la otra con lógica</p>
+            <p style={{cursor:"pointer"}} onClick={() => { router.push("/theother") }}>This will do the same but with logic</p>
 
-            <p onClick={() => {router.replace("/laotra")}}>Si pinchas aquí te lleva a la otra sin historial</p>
+            <p style={{cursor:"pointer"}} onClick={() => {router.replace("/theother")}}>This will do exactly the same but without a history entry</p>
 
         </div>
     );
